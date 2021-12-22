@@ -2,16 +2,16 @@
 {
     partial class MainForm {
         private System.ComponentModel.IContainer components = null;
-        
+
         protected override void Dispose(bool disposing) {
             if (disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
         }
-        
+
         #region Code généré par le Concepteur Windows Form
-        
+
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.EditorTabs = new System.Windows.Forms.TabControl();
@@ -36,7 +36,7 @@
             this.IconsGroupBox.SuspendLayout();
             this.CreditsTab.SuspendLayout();
             this.SuspendLayout();
-            
+
             this.EditorTabs.AllowDrop = true;
             this.EditorTabs.Controls.Add(this.MainTab);
             this.EditorTabs.Controls.Add(this.IconsTab);
@@ -52,7 +52,7 @@
             this.EditorTabs.Size = new System.Drawing.Size(284, 139);
             this.EditorTabs.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.EditorTabs.TabIndex = 0;
-            
+
             this.MainTab.AllowDrop = true;
             this.MainTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(32)))), ((int)(((byte)(55)))));
             this.MainTab.CausesValidation = false;
@@ -71,7 +71,7 @@
             this.MainTab.Size = new System.Drawing.Size(276, 112);
             this.MainTab.TabIndex = 0;
             this.MainTab.Text = "Main";
-            
+
             this.LibVersionLabel.AutoSize = true;
             this.LibVersionLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LibVersionLabel.ForeColor = System.Drawing.Color.LightSkyBlue;
@@ -80,7 +80,7 @@
             this.LibVersionLabel.Size = new System.Drawing.Size(125, 21);
             this.LibVersionLabel.TabIndex = 7;
             this.LibVersionLabel.Text = "CTRPF Version";
-            
+
             this.LibVersionComboBox.BackColor = System.Drawing.Color.White;
             this.LibVersionComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LibVersionComboBox.DropDownHeight = 55;
@@ -96,7 +96,7 @@
             this.LibVersionComboBox.Size = new System.Drawing.Size(95, 29);
             this.LibVersionComboBox.TabIndex = 6;
             this.LibVersionComboBox.TextChanged += new System.EventHandler(this.LibVersionTextChanged);
-            
+
             this.BackupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(32)))), ((int)(((byte)(55)))));
             this.BackupButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackupButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -113,7 +113,7 @@
             this.BackupButton.Text = "Backup";
             this.BackupButton.UseVisualStyleBackColor = false;
             this.BackupButton.Click += new System.EventHandler(this.BackupLoadedLibClicked);
-            
+
             this.GenerateDefaultLibButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(32)))), ((int)(((byte)(55)))));
             this.GenerateDefaultLibButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GenerateDefaultLibButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -130,7 +130,7 @@
             this.GenerateDefaultLibButton.Text = "Default";
             this.GenerateDefaultLibButton.UseVisualStyleBackColor = false;
             this.GenerateDefaultLibButton.Click += new System.EventHandler(this.GenerateDefaultLibClicked);
-            
+
             this.AutoSaveCheckBox.AutoSize = true;
             this.AutoSaveCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.AutoSaveCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
@@ -142,7 +142,7 @@
             this.AutoSaveCheckBox.TabIndex = 2;
             this.AutoSaveCheckBox.Text = "Auto Save";
             this.AutoSaveCheckBox.UseVisualStyleBackColor = true;
-            
+
             this.FileLoadedLabel.AutoSize = true;
             this.FileLoadedLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FileLoadedLabel.ForeColor = System.Drawing.Color.Orange;
@@ -150,7 +150,7 @@
             this.FileLoadedLabel.Name = "FileLoadedLabel";
             this.FileLoadedLabel.Size = new System.Drawing.Size(139, 21);
             this.FileLoadedLabel.TabIndex = 1;
-            
+
             this.IconsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(32)))), ((int)(((byte)(55)))));
             this.IconsTab.CausesValidation = false;
             this.IconsTab.Controls.Add(this.IconsGroupBox);
@@ -161,7 +161,7 @@
             this.IconsTab.Size = new System.Drawing.Size(276, 112);
             this.IconsTab.TabIndex = 1;
             this.IconsTab.Text = "Icons";
-            
+
             this.IconsGroupBox.Controls.Add(this.DownloadIcons);
             this.IconsGroupBox.Controls.Add(this.SaveIconButton);
             this.IconsGroupBox.Controls.Add(this.NewIconButton);
@@ -172,7 +172,7 @@
             this.IconsGroupBox.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.IconsGroupBox.Size = new System.Drawing.Size(296, 141);
             this.IconsGroupBox.TabIndex = 0;
-            
+
             this.DownloadIcons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(32)))), ((int)(((byte)(55)))));
             this.DownloadIcons.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DownloadIcons.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -189,7 +189,7 @@
             this.DownloadIcons.Text = "Download";
             this.DownloadIcons.UseVisualStyleBackColor = false;
             this.DownloadIcons.Click += new System.EventHandler(this.DownloadIconsClick);
-            
+
             this.SaveIconButton.AutoEllipsis = true;
             this.SaveIconButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SaveIconButton.Enabled = false;
@@ -204,7 +204,7 @@
             this.SaveIconButton.Text = "Save";
             this.SaveIconButton.UseVisualStyleBackColor = true;
             this.SaveIconButton.Click += new System.EventHandler(this.SaveNewIconClick);
-            
+
             this.NewIconButton.AllowDrop = true;
             this.NewIconButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.NewIconButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -219,7 +219,7 @@
             this.NewIconButton.Click += new System.EventHandler(this.NewIconButtonClick);
             this.NewIconButton.DragDrop += new System.Windows.Forms.DragEventHandler(this.NewIconDragDrop);
             this.NewIconButton.DragEnter += new System.Windows.Forms.DragEventHandler(this.NewIconDragEnter);
-            
+
             this.IconsComboBox.AllowDrop = true;
             this.IconsComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IconsComboBox.DropDownHeight = 140;
@@ -288,7 +288,7 @@
             this.IconsComboBox.TabIndex = 0;
             this.IconsComboBox.SelectedIndexChanged += new System.EventHandler(this.IconsGroupBoxIndexChanged);
             this.IconsComboBox.TextChanged += new System.EventHandler(this.IconsGroupBoxTextChanged);
-            
+
             this.CreditsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(32)))), ((int)(((byte)(55)))));
             this.CreditsTab.Controls.Add(this.CreditsLabel);
             this.CreditsTab.Location = new System.Drawing.Point(4, 23);
@@ -296,7 +296,7 @@
             this.CreditsTab.Size = new System.Drawing.Size(276, 112);
             this.CreditsTab.TabIndex = 2;
             this.CreditsTab.Text = "Credits";
-            
+
             this.CreditsLabel.AutoEllipsis = true;
             this.CreditsLabel.AutoSize = true;
             this.CreditsLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -306,7 +306,7 @@
             this.CreditsLabel.Size = new System.Drawing.Size(286, 63);
             this.CreditsLabel.TabIndex = 8;
             this.CreditsLabel.Text = "Original program developed by\r\nKominost, updated and modified\r\nby Jared0714";
-            
+
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -333,7 +333,7 @@
             this.CreditsTab.PerformLayout();
             this.ResumeLayout(false);
         }
-        
+
         #endregion
         private System.Windows.Forms.TabPage IconsTab;
         private System.Windows.Forms.TabControl EditorTabs;

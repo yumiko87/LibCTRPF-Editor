@@ -69,7 +69,7 @@ namespace LibEditor {
             };
             return list;
         }
-        
+
         public static int AllIconOffset(string name) {
             Dictionary<string, int> icnOffset = new Dictionary<string, int>() {
                 {"About15", 0x58164},
@@ -126,29 +126,29 @@ namespace LibEditor {
             };
             return icnOffset[name];
         }
-        
+
         public static int GetIconsAmount() {
             return Icons.AllIcons().Length;
         }
-        
+
         public static int GetDimension(string dimension, string name) {
             int res = -1;
-            
+
             foreach (string i in Icons.AllIcons()) {
                 if (dimension == "Width" || dimension == "Height") {
                     if (i == name) {
                         if (name.Contains("15")) {
                             res = 15;
                         }
-                        
+
                         else if (name.Contains("20")) {
                             res = 20;
                         }
-                        
+
                         else if (name.Contains("25")) {
                             res = 25;
                         }
-                        
+
                         else if (name.Contains("40")) {
                             res = 40;
                         }
@@ -158,24 +158,24 @@ namespace LibEditor {
             }
             return res;
         }
-        
+
         public static int GetLength(string name) {
             int res = -1;
-            
+
             foreach (string i in Icons.AllIcons()) {
                 if (i == name) {
                     if (name.Contains("15")) {
                         res = (15 * 15 * 4);
                     }
-                    
+
                     else if (name.Contains("20")) {
                         res = (20 * 20 * 4);
                     }
-                    
+
                     else if (name.Contains("25")) {
                         res = (25 * 25 * 4);
                     }
-                    
+
                     else if (name.Contains("40")) {
                         res = (40 * 40 * 4);
                     }
@@ -184,7 +184,7 @@ namespace LibEditor {
             }
             return res;
         }
-        
+
         public static byte[] GetBytes(byte[] LibBytes, string name) {
             return LibBytes.Skip(Icons.AllIconOffset(name)).Take(Icons.GetLength(name)).ToArray();
         }
